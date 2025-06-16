@@ -11,7 +11,7 @@ db_connection = pymysql.connect(
     password=#,
     database='star_schema'
 )
-engine = create_engine('mysql+pymysql://root:EfeBjk1903@localhost/star_schema')
+engine = create_engine('mysql+pymysql://root:#@localhost/star_schema')
 
 # PART 1: Google Cloud Mobility Data
 credentials = service_account.Credentials.from_service_account_file('C:\\Users\\efeco\\OneDrive\\Masaüstü\\bigdata\\.bq_sa.json')
