@@ -52,7 +52,7 @@ FROM tweets
 WHERE FROM_UNIXTIME(Date, '%%Y-%%m') BETWEEN '2020-03' AND '2020-04'
 GROUP BY Company, Date;
 """
-engine2 = create_engine('mysql+pymysql://root:EfeBjk1903@localhost/hw3q3')
+engine2 = create_engine('mysql+pymysql://root:#@localhost/hw3q3')
 tweets_data = pd.read_sql(tweets_query, engine2)
 
 # Ensure 'Date' column is formatted as datetime in both DataFrames
